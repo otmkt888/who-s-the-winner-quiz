@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>12B - 2026世界杯冠军预测挑战 | 预测冠军抽豪华大奖</title>
+<meta name="description" content="选出你心中的2026世界杯冠军，前往12B官网加入会员并完成指定任务，即有机会抽纽约决赛之旅、豪华邮轮、iPhone 17 Pro Max及免费彩金。">
+<meta property="og:image" content="https://placehold.co/1200x630/0A0E1A/D4AF37?text=12B+2026+World+Cup+Prediction">
+<link rel="canonical" href="https://www.12bet.com">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        gold: '#D4AF37',
+        'gold-light': '#F0C96B',
+        'gold-dark': '#B8941F',
+        navy: '#0A0E1A',
+        'navy-card': '#111828',
+        'navy-light': '#1A2035',
+      },
+      fontFamily: { sans: ['Noto Sans SC', 'sans-serif'] }
+    }
+  }
+}
+</script>
+<style>
+*{box-sizing:border-box}
+body{background:#0A0E1A;color:#fff;font-family:'Noto Sans SC',sans-serif;overflow-x:hidden}
+.gold-text{background:linear-gradient(135deg,#F0C96B 0%,#D4AF37 50%,#B8941F 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.btn-primary{background:linear-gradient(135deg,#F0C96B 0%,#D4AF37 50%,#B8941F 100%);color:#0A0E1A;font-weight:700;border-radius:8px;transition:all .3s;box-shadow:0 4px 15px rgba(212,175,55,.4);display:inline-block;text-align:center}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(212,175,55,.6)}
+.btn-outline{border:1px solid rgba(212,175,55,.5);color:#D4AF37;border-radius:8px;transition:all .3s;display:inline-block;text-align:center}
+.btn-outline:hover{background:rgba(212,175,55,.1)}
+#hero{position:relative;background:#0A0E1A;overflow:hidden}
+#particles-canvas{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:1}
+header{position:fixed;top:36px;left:0;right:0;z-index:200;background:rgba(10,14,26,.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(212,175,55,.2)}
+.nav-link{color:rgba(255,255,255,.65);font-size:.875rem;transition:color .3s;position:relative}
+.nav-link:hover{color:#D4AF37}
+.nav-link::after{content:'';position:absolute;bottom:-2px;left:0;right:0;height:1px;background:#D4AF37;transform:scaleX(0);transition:transform .3s}
+.nav-link:hover::after{transform:scaleX(1)}
+.marquee-wrap{overflow:hidden}
+.marquee-track{display:flex;animation:marquee 25s linear infinite;white-space:nowrap}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.team-card{background:#111828;border:2px solid #1e2d4a;border-radius:12px;cursor:pointer;transition:all .3s;position:relative;overflow:hidden}
+.team-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,#D4AF37,transparent);opacity:0;transition:opacity .3s}
+.team-card:hover{border-color:#D4AF37;transform:translateY(-4px);box-shadow:0 8px 25px rgba(212,175,55,.2)}
+.team-card:hover::before,.team-card.selected::before{opacity:1}
+.team-card.selected{border-color:#D4AF37;background:#1a2540;box-shadow:0 0 25px rgba(212,175,55,.3)}
+.team-card.dimmed{opacity:.35;transform:scale(.97)}
+.selected-badge{position:absolute;top:8px;right:8px;background:linear-gradient(135deg,#F0C96B,#D4AF37);color:#0A0E1A;font-size:.6rem;font-weight:900;padding:2px 8px;border-radius:999px}
+.progress-bar{height:10px;background:#1e2d4a;border-radius:999px;overflow:hidden}
+.progress-fill{height:100%;background:linear-gradient(90deg,#D4AF37,#F0C96B);border-radius:999px;width:0%;transition:width 1.3s cubic-bezier(.4,0,.2,1)}
+.progress-fill.my-pick{background:linear-gradient(90deg,#EF4444,#F87171)}
+.prize-card{background:#111828;border:1px solid #1e2d4a;border-radius:12px;transition:all .3s;position:relative;overflow:hidden}
+.prize-card:hover{transform:translateY(-4px);border-color:#D4AF37;box-shadow:0 8px 30px rgba(212,175,55,.15)}
+.prize-card.grand{border:2px solid #D4AF37;background:linear-gradient(135deg,#1a2540,#111828);box-shadow:0 0 35px rgba(212,175,55,.2)}
+.prize-card.grand::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 0%,rgba(212,175,55,.07),transparent 60%);pointer-events:none}
+.faq-item{border:1px solid #1e2d4a;border-radius:8px;overflow:hidden;transition:border-color .3s}
+.faq-item.open{border-color:rgba(212,175,55,.5)}
+.faq-answer{max-height:0;overflow:hidden;transition:max-height .4s ease}
+.faq-answer.open{max-height:300px}
+.faq-icon{transition:transform .3s;display:inline-block}
+.faq-item.open .faq-icon{transform:rotate(45deg)}
+.warning-box{background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.3);border-radius:8px}
+.info-box{background:rgba(212,175,55,.08);border:1px solid rgba(212,175,55,.25);border-radius:8px}
+.hype-box{background:linear-gradient(135deg,rgba(212,175,55,.12),rgba(212,175,55,.06));border:1px solid rgba(212,175,55,.45);border-radius:12px}
+.cta-step-box{background:linear-gradient(135deg,rgba(20,40,80,.8),rgba(15,30,60,.8));border:1px solid rgba(212,175,55,.5);border-radius:12px;position:relative;overflow:hidden}
+.cta-step-box::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,#D4AF37,transparent)}
+.brand-banner{background:linear-gradient(135deg,#0d1829,#111d35,#0d1829);border:1px solid rgba(212,175,55,.3);position:relative;overflow:hidden}
+.brand-banner::before,.brand-banner::after{content:'';position:absolute;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,#D4AF37,transparent)}
+.brand-banner::before{top:0}.brand-banner::after{bottom:0}
+.section-divider{height:1px;background:linear-gradient(90deg,transparent,rgba(212,175,55,.25),transparent)}
+.badge-gold{background:linear-gradient(135deg,#F0C96B,#D4AF37);color:#0A0E1A;font-size:.65rem;font-weight:900;padding:2px 10px;border-radius:999px;display:inline-block}
+@keyframes pulse-glow{0%,100%{box-shadow:0 0 15px rgba(212,175,55,.4)}50%{box-shadow:0 0 35px rgba(212,175,55,.8),0 0 60px rgba(212,175,55,.35)}}
+.pulse-gold{animation:pulse-glow 2.2s ease-in-out infinite}
+@keyframes shimmer-anim{0%{background-position:-1000px 0}100%{background-position:1000px 0}}
+.shimmer-card{background:linear-gradient(90deg,#111828 25%,#1a2540 50%,#111828 75%);background-size:1000px 100%;animation:shimmer-anim 3s infinite}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+#float-cta{position:fixed;right:24px;bottom:28px;z-index:500}
+#mobile-bar{position:fixed;bottom:0;left:0;right:0;z-index:500;display:none}
+@media(max-width:768px){
+  #float-cta{display:none!important}
+  #mobile-bar{display:block!important}
+  body{padding-bottom:68px}
+}
+</style>
+</head>
+<body>
+
+<!-- ANNOUNCEMENT MARQUEE -->
+<div class="bg-gold py-2 marquee-wrap" style="position:fixed;top:0;left:0;right:0;z-index:202">
+  <div class="marquee-track text-navy text-sm font-bold">
+    <span class="px-6">🏆 2026世界杯冠军预测挑战 &nbsp;|&nbsp; 首奖：纽约决赛双人豪华行 &nbsp;|&nbsp; 第2–3名：纽约单人行程 &nbsp;|&nbsp; 邮轮之旅 &nbsp;|&nbsp; iPhone 17 Pro Max &nbsp;|&nbsp; MYR 400 免费彩金 &nbsp;|&nbsp; ⚠️ 抽奖资格须于12B官网加入会员并完成指定任务后取得 &nbsp;|&nbsp;</span>
+    <span class="px-6">🏆 2026世界杯冠军预测挑战 &nbsp;|&nbsp; 首奖：纽约决赛双人豪华行 &nbsp;|&nbsp; 第2–3名：纽约单人行程 &nbsp;|&nbsp; 邮轮之旅 &nbsp;|&nbsp; iPhone 17 Pro Max &nbsp;|&nbsp; MYR 400 免费彩金 &nbsp;|&nbsp; ⚠️ 抽奖资格须于12B官网加入会员并完成指定任务后取得 &nbsp;|&nbsp;</span>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
+    <a href="https://www.12bet.com">
+      <img src="assets/12B-Logo.png" alt="12B" style="height:44px;width:auto;object-fit:contain">
+    </a>
+    <nav class="hidden lg:flex items-center gap-7">
+      <a href="#vote-section" class="nav-link" onclick="smoothScroll('vote-section');return false">冠军预测</a>
+      <a href="#leaderboard-section" class="nav-link" onclick="smoothScroll('leaderboard-section');return false">人气排行</a>
+      <a href="#prizes-section" class="nav-link" onclick="smoothScroll('prizes-section');return false">豪华大奖</a>
+      <a href="#steps-section" class="nav-link" onclick="smoothScroll('steps-section');return false">抽奖资格</a>
+      <a href="#faq-section" class="nav-link" onclick="smoothScroll('faq-section');return false">活动规则</a>
+    </nav>
+    <a href="https://www.12bet.com" class="btn-primary px-4 py-2 text-sm pulse-gold hidden sm:inline-block">加入会员抽豪华大奖</a>
+    <a href="https://www.12bet.com" class="btn-primary px-3 py-2 text-xs pulse-gold sm:hidden">前往官网</a>
+  </div>
+</header>
+
+<!-- HERO: 主视觉图片 -->
+<section id="hero" style="padding-top:100px">
+  <canvas id="particles-canvas"></canvas>
+  <!-- 主视觉图片：完整展示，不遮挡人物 -->
+  <div style="position:relative;z-index:2;line-height:0">
+    <img src="assets/Letstalk_image_20260424211529.jpg"
+         alt="2026世界杯冠军预测 - 谁会是新的世界王者？"
+         style="width:100%;height:auto;display:block">
+    <!-- 底部淡出：图片下缘与深色背景无缝衔接 -->
+    <div style="position:absolute;bottom:0;left:0;right:0;height:80px;background:linear-gradient(to bottom,transparent,#0A0E1A);pointer-events:none"></div>
+  </div>
+
+  <!-- CTA 区块：图片正下方，人物完整可见 -->
+  <div class="relative z-10 text-center px-4 py-8" style="background:#0A0E1A;margin-top:-2px">
+    <div class="flex flex-col sm:flex-row gap-4 items-center justify-center mb-4 max-w-xl mx-auto">
+      <a href="#vote-section" onclick="smoothScroll('vote-section');return false"
+         class="btn-primary px-8 py-4 text-lg w-full sm:w-auto pulse-gold">⚽ 立即预测冠军</a>
+      <a href="https://www.12bet.com"
+         class="btn-outline px-8 py-4 text-lg w-full sm:w-auto">前往官网加入会员 →</a>
+    </div>
+    <p class="text-xs" style="color:rgba(240,201,107,.6)">
+      ⚠️ 本页投票仅为互动体验，实际抽奖资格须以 12B 官网活动规则为准。
+    </p>
+  </div>
+
+  <!-- Stats bar -->
+  <div class="relative z-10 py-6 px-4" style="background:#0A0E1A">
+    <div class="max-w-2xl mx-auto grid grid-cols-3 gap-8 sm:gap-20 border-t pt-8" style="border-color:rgba(212,175,55,.2)">
+      <div class="text-center">
+        <div class="text-3xl sm:text-4xl font-black gold-text" id="stat-fans">0</div>
+        <div class="text-gray-400 text-xs sm:text-sm mt-1">球迷已预测</div>
+      </div>
+      <div class="text-center">
+        <div class="text-3xl sm:text-4xl font-black gold-text">30</div>
+        <div class="text-gray-400 text-xs sm:text-sm mt-1">豪华大奖名额</div>
+      </div>
+      <div class="text-center">
+        <div class="text-3xl sm:text-4xl font-black gold-text">2007</div>
+        <div class="text-gray-400 text-xs sm:text-sm mt-1">12B 成立年份</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROMOTION BANNER -->
+<section class="py-6 px-4" style="background:#0A0E1A">
+  <div class="max-w-6xl mx-auto">
+    <a href="https://www.12bet.com" target="_blank" rel="noopener" class="block"
+       style="border-radius:12px;overflow:hidden;box-shadow:0 8px 40px rgba(212,175,55,.25);transition:transform .3s,box-shadow .3s"
+       onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 16px 50px rgba(212,175,55,.4)'"
+       onmouseout="this.style.transform='';this.style.boxShadow='0 8px 40px rgba(212,175,55,.25)'">
+      <img src="assets/promotion-banner-new.png"
+           alt="World Cup 2026 - Watch Live in USA | Free USA Trip · Luxury Cruise · iPhone 17 Pro Max | 12BET"
+           style="width:100%;height:auto;display:block">
+    </a>
+    <p class="text-center text-xs mt-3" style="color:rgba(156,163,175,.5)">点击 Banner 前往 12B 官网了解活动详情</p>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- VOTE SECTION -->
+<section id="vote-section" class="py-20 px-4">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-12 reveal">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-4" style="background:rgba(212,175,55,.08);border:1px solid rgba(212,175,55,.25)">
+        <span class="text-gold text-sm">🗳️ 冠军预测投票</span>
+      </div>
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-4">选出你心中的 <span class="gold-text">2026 世界王者</span></h2>
+      <p class="text-gray-400 max-w-xl mx-auto text-sm sm:text-base">这是一场球迷预测挑战。完成投票后，你可以查看人气排行与专属预测结果。</p>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8" id="team-grid"></div>
+
+    <p class="text-center text-xs reveal" style="color:rgba(156,163,175,.4)">
+      投票完成后，前往 12B 官网注册会员即可正式参与豪华大奖抽奖
+    </p>
+  </div>
+</section>
+
+<!-- VOTE COMPLETE (hidden until selection) -->
+<section id="vote-complete-section" class="py-12 px-4 hidden">
+  <div class="max-w-2xl mx-auto">
+    <div class="shimmer-card rounded-2xl p-8 text-center" style="border:1px solid rgba(212,175,55,.4)">
+      <div class="text-5xl mb-4">🎉</div>
+      <h2 class="text-2xl sm:text-3xl font-black mb-3 gold-text">预测完成！</h2>
+      <p class="text-lg text-gray-300 mb-2">你选择了：<span id="chosen-name" class="text-gold font-bold text-xl"></span></p>
+      <p class="text-gray-400 mb-6">目前有 <span id="chosen-pct" class="text-gold font-bold"></span>% 的玩家和你做出相同选择。</p>
+      <div class="cta-step-box p-5 mb-6 text-center">
+        <p class="text-base font-black mb-2" style="color:#F0C96B">🚀 距离纽约，只差一步！</p>
+        <p class="text-sm text-gray-300 leading-relaxed">前往 12B 官网完成注册，即可正式加入豪华大奖抽奖。<br>纽约决赛之旅、邮轮、iPhone — 可能就是你的！</p>
+      </div>
+      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="https://www.12bet.com" class="btn-primary px-6 py-4 pulse-gold text-base font-black">✈️ 立即前往官网，参与抽奖</a>
+        <button onclick="smoothScroll('result-card-wrapper')" class="btn-outline px-6 py-3 text-sm">查看我的预测结果 →</button>
+      </div>
+      <p class="text-xs mt-3" style="color:rgba(156,163,175,.4)">实际抽奖资格以 12B 官网活动规则为准</p>
+    </div>
+  </div>
+</section>
+
+<!-- LEADERBOARD (hidden until selection) -->
+<section id="leaderboard-section" class="py-16 px-4 hidden">
+  <div class="max-w-3xl mx-auto">
+    <div class="text-center mb-10 reveal">
+      <h2 class="text-3xl font-black mb-2">球迷人气预测 <span class="gold-text">排行榜</span></h2>
+      <p class="text-gray-400 text-sm">看看目前最多玩家看好哪一队。此排行榜仅供娱乐互动参考。</p>
+    </div>
+    <div id="leaderboard-list" class="space-y-3 mb-6"></div>
+    <div class="cta-step-box p-4 text-center">
+      <p class="text-sm font-bold mb-1" style="color:#F0C96B">👉 让你的预测变成真实大奖！</p>
+      <p class="text-xs text-gray-400">现在前往 12B 官网注册会员，正式参与纽约之旅抽奖</p>
+      <a href="https://www.12bet.com" class="btn-primary px-5 py-2 text-sm mt-3 inline-block">立即参与抽奖 →</a>
+    </div>
+  </div>
+</section>
+
+<!-- RESULT CARD (hidden until selection) -->
+<section id="result-card-wrapper" class="py-16 px-4 hidden">
+  <div class="max-w-xl mx-auto">
+    <div class="text-center mb-8">
+      <h2 class="text-3xl font-black">你的 <span class="gold-text">预测结果卡</span></h2>
+    </div>
+    <div style="background:linear-gradient(135deg,#0f1728,#111828);border:1px solid #D4AF37;border-radius:16px" class="p-8">
+      <div class="text-center mb-6">
+        <div class="text-6xl mb-3" id="rc-emoji"></div>
+        <p class="text-gray-400 text-sm mb-1">你的 2026 世界王者预测</p>
+        <h3 class="text-2xl font-black gold-text mb-2" id="rc-name"></h3>
+        <span class="badge-gold" id="rc-fantype"></span>
+      </div>
+      <p class="text-gray-300 text-center mb-6 text-sm leading-relaxed" id="rc-desc"></p>
+      <div class="rounded-xl p-4 mb-4 text-center" style="background:rgba(10,14,26,.6)">
+        <p class="text-gray-400 text-xs mb-2">豪华大奖幸运指数</p>
+        <div class="flex items-center justify-center gap-3">
+          <span class="text-4xl font-black gold-text" id="rc-lucky"></span>
+          <span class="text-2xl">🍀</span>
+        </div>
+      </div>
+      <div class="cta-step-box p-5 mb-6">
+        <div class="flex items-center gap-3 mb-3">
+          <span class="text-2xl">🎯</span>
+          <span class="font-black text-base" style="color:#F0C96B">大奖触手可及，别让它溜走！</span>
+        </div>
+        <p class="text-sm text-gray-300 leading-relaxed">注册 12B 会员，即刻锁定你的抽奖资格。<br>操作简单，纽约决赛之旅等着你！</p>
+      </div>
+      <div class="flex flex-col gap-3">
+        <a href="https://www.12bet.com" class="btn-primary px-6 py-4 pulse-gold text-base font-black">✈️ 我要去纽约！立即注册参与</a>
+        <button onclick="resetVote();smoothScroll('vote-section')" class="text-sm py-3 rounded-lg transition" style="border:1px solid rgba(212,175,55,.3);color:rgba(212,175,55,.6)">↺ 重新选择冠军队伍</button>
+      </div>
+      <p class="text-xs mt-3 text-center" style="color:rgba(156,163,175,.4)">实际抽奖资格以 12B 官网活动规则为准</p>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider my-2"></div>
+
+<!-- BRAND BANNER -->
+<section class="py-16 px-4">
+  <div class="max-w-5xl mx-auto">
+    <div class="brand-banner rounded-2xl p-8 sm:p-12">
+      <div class="flex flex-col lg:flex-row items-center gap-10">
+        <div class="flex-1 text-center lg:text-left">
+          <div class="mb-6 flex justify-center lg:justify-start">
+            <img src="assets/12B-Logo.png" alt="12B" style="height:64px;width:auto;object-fit:contain">
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-black mb-3">你的直觉，<span class="gold-text">值得一张纽约机票！</span></h2>
+          <p class="text-gray-300 mb-2 text-sm leading-relaxed">球迷预测只是第一步 — 注册 12B 会员，就能把你的预测变成真实大奖！<br>纽约决赛双人行、豪华邮轮、iPhone，<span class="text-gold font-bold">等你来拿！</span></p>
+          <p class="text-xs mb-5" style="color:rgba(156,163,175,.45)">*注册 12B 会员并完成官网指定活动要求后取得抽奖资格</p>
+          <a href="https://www.12bet.com" class="btn-primary px-8 py-4 text-lg pulse-gold">✈️ 注册会员，锁定抽奖资格</a>
+        </div>
+        <div class="grid grid-cols-3 gap-3 flex-shrink-0">
+          <div class="rounded-xl p-4 text-center" style="background:rgba(212,175,55,.08);border:1px solid rgba(212,175,55,.2)"><div class="text-3xl mb-1">✈️</div><div class="text-xs text-gold">纽约行</div></div>
+          <div class="rounded-xl p-4 text-center" style="background:rgba(212,175,55,.08);border:1px solid rgba(212,175,55,.2)"><div class="text-3xl mb-1">🚢</div><div class="text-xs text-gold">邮轮</div></div>
+          <div class="rounded-xl p-4 text-center" style="background:rgba(212,175,55,.08);border:1px solid rgba(212,175,55,.2)"><div class="text-3xl mb-1">📱</div><div class="text-xs text-gold">iPhone</div></div>
+          <div class="rounded-xl p-4 text-center" style="background:rgba(212,175,55,.08);border:1px solid rgba(212,175,55,.2)"><div class="text-3xl mb-1">💰</div><div class="text-xs text-gold">MYR 400</div></div>
+          <div class="rounded-xl p-4 text-center" style="background:rgba(212,175,55,.08);border:1px solid rgba(212,175,55,.2)"><div class="text-3xl mb-1">🎁</div><div class="text-xs text-gold">彩金</div></div>
+          <div class="rounded-xl p-4 text-center" style="background:rgba(212,175,55,.08);border:1px solid rgba(212,175,55,.2)"><div class="text-3xl mb-1">🏆</div><div class="text-xs text-gold">大奖</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- PRIZES SECTION -->
+<section id="prizes-section" class="py-20 px-4">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-6 reveal">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-4" style="background:rgba(212,175,55,.08);border:1px solid rgba(212,175,55,.25)">
+        <span class="text-gold text-sm">🏆 豪华大奖一览</span>
+      </div>
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-4">豪华大奖 <span class="gold-text">一览</span></h2>
+      <p class="text-gray-400 max-w-2xl mx-auto text-sm sm:text-base">加入 12B 会员并完成官网指定任务，即有机会抽中纽约决赛豪华行程、邮轮之旅、iPhone 17 Pro Max 及免费彩金。</p>
+    </div>
+    <p class="text-center text-xs mb-10 max-w-2xl mx-auto reveal" style="color:rgba(156,163,175,.4)">
+      *以上奖品需前往 12B 官网注册会员并完成指定活动要求后方可参与抽奖，详情以官网公告为准。
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+      <div class="prize-card grand p-6 reveal sm:col-span-2 lg:col-span-1">
+        <div class="flex items-start justify-between mb-4">
+          <span class="badge-gold">👑 第 1 名</span>
+          <span class="text-4xl">✈️</span>
+        </div>
+        <h3 class="text-2xl font-black gold-text mb-2">纽约决赛双人豪华行</h3>
+        <p class="text-gray-400 text-sm mb-4">机票 + 酒店 + 门票</p>
+        <div class="rounded-lg p-3 text-xs text-gray-400" style="background:rgba(212,175,55,.06);border:1px solid rgba(212,175,55,.2)">🗽 亲赴纽约见证历史性决赛，全程豪华安排，双人同行梦幻体验！</div>
+      </div>
+
+      <div class="prize-card p-6 reveal">
+        <div class="flex items-start justify-between mb-4"><span class="badge-gold">🥈 第 2–3 名</span><span class="text-3xl">⭐</span></div>
+        <h3 class="text-xl font-black text-white mb-2">纽约决赛<span class="gold-text">单人</span>行程</h3>
+        <p class="text-gray-400 text-sm">亲临见证历史</p>
+      </div>
+
+      <div class="prize-card p-6 reveal">
+        <div class="flex items-start justify-between mb-4"><span class="badge-gold">🚢 第 4 名</span><span class="text-3xl">🚢</span></div>
+        <h3 class="text-xl font-black text-white mb-2">豪华亚洲<span class="gold-text">邮轮之旅</span></h3>
+        <p class="text-gray-400 text-sm">双人邮轮套餐</p>
+      </div>
+
+      <div class="prize-card p-6 reveal">
+        <div class="flex items-start justify-between mb-4"><span class="badge-gold">📱 第 5 名</span><span class="text-3xl">📱</span></div>
+        <h3 class="text-xl font-black text-white mb-2">iPhone <span class="gold-text">17 Pro Max</span></h3>
+        <p class="text-gray-400 text-sm">最新旗舰顶配</p>
+      </div>
+
+      <div class="prize-card p-6 reveal">
+        <div class="flex items-start justify-between mb-4"><span class="badge-gold">💰 第 6–10 名</span><span class="text-3xl">💰</span></div>
+        <h3 class="text-xl font-black text-white mb-2"><span class="gold-text">MYR 400</span> 免费彩金</h3>
+        <p class="text-gray-400 text-sm">每人各得</p>
+      </div>
+
+      <div class="prize-card p-6 reveal">
+        <div class="flex items-start justify-between mb-4"><span class="badge-gold">🎁 第 11–30 名</span><span class="text-3xl">🎁</span></div>
+        <h3 class="text-xl font-black text-white mb-2"><span class="gold-text">MYR 160</span> 免费彩金</h3>
+        <p class="text-gray-400 text-sm">每人各得</p>
+      </div>
+    </div>
+
+    <div class="text-center reveal">
+      <p class="text-gray-400 mb-4 text-sm">想抽中豪华大奖？前往官网完成会员任务</p>
+      <a href="https://www.12bet.com" class="btn-primary px-10 py-4 text-lg pulse-gold">前往 12B 官网取得抽奖资格 →</a>
+      <p class="text-xs mt-4" style="color:rgba(107,114,128,.6)">抽奖资格、活动期间、奖品内容与得奖公告，皆以 12B 品牌官网公告为准。</p>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- STEPS SECTION -->
+<section id="steps-section" class="py-20 px-4" style="background:rgba(26,32,53,.25)">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-14 reveal">
+      <h2 class="text-3xl sm:text-4xl font-black mb-4">如何取得 <span class="gold-text">豪华大奖抽奖资格？</span></h2>
+    </div>
+    <div class="flex flex-col md:flex-row gap-6 md:gap-2 items-start">
+
+      <div class="flex md:flex-col items-start md:items-center gap-4 md:gap-3 flex-1 px-3">
+        <div class="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center font-black text-gold text-xl" style="border:2px solid #D4AF37">1</div>
+        <div class="md:text-center">
+          <h3 class="font-bold text-white text-sm mb-1">完成冠军预测互动</h3>
+          <p class="text-gray-400 text-xs leading-relaxed">选出你心中的 2026 世界王者，查看人气排行与预测结果。</p>
+          <p class="text-xs mt-1 italic" style="color:rgba(239,68,68,.55)">此步骤仅为互动体验，不代表抽奖资格。</p>
+        </div>
+      </div>
+
+      <div class="hidden md:flex items-center pt-4 text-gold/30 text-2xl px-1">→</div>
+
+      <div class="flex md:flex-col items-start md:items-center gap-4 md:gap-3 flex-1 px-3">
+        <div class="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center font-black text-gold text-xl" style="border:2px solid #D4AF37">2</div>
+        <div class="md:text-center">
+          <h3 class="font-bold text-white text-sm mb-1">前往 12B 品牌官网</h3>
+          <p class="text-gray-400 text-xs leading-relaxed">点击页面中的按钮，前往品牌官网活动页。</p>
+        </div>
+      </div>
+
+      <div class="hidden md:flex items-center pt-4 text-gold/30 text-2xl px-1">→</div>
+
+      <div class="flex md:flex-col items-start md:items-center gap-4 md:gap-3 flex-1 px-3">
+        <div class="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center font-black text-gold text-xl" style="border:2px solid #D4AF37">3</div>
+        <div class="md:text-center">
+          <h3 class="font-bold text-white text-sm mb-1">加入或登录品牌会员</h3>
+          <p class="text-gray-400 text-xs leading-relaxed">完成会员注册或登录既有会员账号。</p>
+        </div>
+      </div>
+
+      <div class="hidden md:flex items-center pt-4 text-gold/30 text-2xl px-1">→</div>
+
+      <div class="flex md:flex-col items-start md:items-center gap-4 md:gap-3 flex-1 px-3">
+        <div class="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center font-black text-gold text-xl" style="border:2px solid #D4AF37">4</div>
+        <div class="md:text-center">
+          <h3 class="font-bold text-white text-sm mb-1">完成官网指定活动要求</h3>
+          <p class="text-gray-400 text-xs leading-relaxed">依照品牌官网公告完成指定任务。</p>
+        </div>
+      </div>
+
+      <div class="hidden md:flex items-center pt-4 text-gold/30 text-2xl px-1">→</div>
+
+      <div class="flex md:flex-col items-start md:items-center gap-4 md:gap-3 flex-1 px-3">
+        <div class="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center font-black text-navy text-xl bg-gold" style="border:2px solid #D4AF37">5</div>
+        <div class="md:text-center">
+          <h3 class="font-bold text-gold text-sm mb-1">取得抽奖资格</h3>
+          <p class="text-gray-400 text-xs leading-relaxed">符合活动条款后，即可参加豪华大奖抽奖。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-12 reveal">
+      <a href="https://www.12bet.com" class="btn-primary px-8 py-4 text-lg">立即前往 12B 官网 →</a>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- FAQ -->
+<section id="faq-section" class="py-20 px-4">
+  <div class="max-w-3xl mx-auto">
+    <div class="text-center mb-12 reveal">
+      <h2 class="text-3xl sm:text-4xl font-black mb-4">活动规则与 <span class="gold-text">FAQ</span></h2>
+    </div>
+    <div id="faq-list" class="space-y-3 reveal"></div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- FINAL CTA -->
+<section class="py-24 px-4" style="background:radial-gradient(ellipse at center,#1a2545 0%,#0A0E1A 70%)">
+  <div class="max-w-3xl mx-auto text-center">
+    <div class="text-6xl mb-6">🏆</div>
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-6">
+      你的冠军预测已完成，<br><span class="gold-text">下一步取得抽奖资格</span>
+    </h2>
+    <p class="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">前往 12B 品牌官网，加入会员并完成指定任务，即有机会抽纽约决赛之旅、豪华邮轮、iPhone 及免费彩金。</p>
+    <div class="info-box p-3 mb-8 text-sm max-w-lg mx-auto" style="color:rgba(240,201,107,.65)">
+      本页冠军预测为互动体验，不等同于抽奖资格。欲参加豪华大奖抽奖，请前往 12B 官网加入或登录会员，并完成指定活动要求。
+    </div>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="https://www.12bet.com" class="btn-primary px-10 py-5 text-xl pulse-gold">立即前往 12B 官网 →</a>
+      <button onclick="resetVote();smoothScroll('vote-section')" class="btn-outline px-8 py-5 text-lg">↺ 重新选择冠军队伍</button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-12 px-4" style="border-top:1px solid rgba(212,175,55,.2)">
+  <div class="max-w-6xl mx-auto">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-8 mb-8">
+      <div>
+        <img src="assets/12B-Logo.png" alt="12B" style="height:40px;width:auto;object-fit:contain">
+      </div>
+      <div class="flex flex-wrap justify-center gap-4 text-sm" style="color:rgba(156,163,175,.7)">
+        <a href="https://www.12bet.com" class="hover:text-gold transition">官网</a>
+        <a href="https://www.12bet.com" class="hover:text-gold transition">活动条款</a>
+        <a href="https://www.12bet.com" class="hover:text-gold transition">隐私政策</a>
+        <a href="https://www.12bet.com" class="hover:text-gold transition">免责声明</a>
+      </div>
+    </div>
+    <div class="warning-box p-4 mb-6 text-xs leading-relaxed" style="color:rgba(252,165,165,.55)">
+      <strong>重要声明：</strong>本页冠军预测仅为互动娱乐与活动导流用途，不作为抽奖资格依据。实际抽奖资格、任务条件、活动期间、得奖公告与奖品内容，皆以 12B 品牌官网活动页公告为准。18岁以上方可参与，请负责任地娱乐。
+    </div>
+    <div class="text-center text-xs" style="color:rgba(107,114,128,.5)">© 2026 12B. All rights reserved. Lead with Sincerity.</div>
+  </div>
+</footer>
+
+<!-- FLOAT CTA DESKTOP -->
+<div id="float-cta">
+  <a href="https://www.12bet.com" class="btn-primary flex flex-col items-center gap-1 px-5 py-4 rounded-2xl pulse-gold" style="min-width:136px">
+    <span class="text-xl">🏆</span>
+    <span class="font-black text-xs leading-tight text-center">加入会员<br>抽豪华大奖</span>
+  </a>
+</div>
+
+<!-- MOBILE BOTTOM BAR -->
+<div id="mobile-bar">
+  <div class="flex items-center justify-between gap-3 px-4 py-3" style="background:#0A0E1A;border-top:1px solid rgba(212,175,55,.35)">
+    <span class="text-xs" style="color:rgba(209,213,219,.8);flex:1">加入会员，完成任务抽豪华大奖</span>
+    <a href="https://www.12bet.com" class="btn-primary px-4 py-2 text-xs flex-shrink-0">前往官网</a>
+  </div>
+</div>
+
+<script>
+const TEAMS=[
+  {id:'france',   name:'法国',   emoji:'🇫🇷',caption:'埃菲尔铁塔',
+   img:'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Tour_Eiffel_Wikimedia_Commons.jpg/250px-Tour_Eiffel_Wikimedia_Commons.jpg',
+   label:'速度与天赋兼具',  fanType:'速度天赋派',pct:24,lucky:87,desc:'你相信天才球员的灵感与速度能主宰比赛。目前有 24% 的玩家与你站在同一阵线。'},
+  {id:'brazil',   name:'巴西',   emoji:'🇧🇷',caption:'基督救世主',
+   img:'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Christ_the_Redeemer_-_Cristo_Redentor.jpg/250px-Christ_the_Redeemer_-_Cristo_Redentor.jpg',
+   label:'桑巴足球王者候选',fanType:'热血信仰型',pct:28,lucky:92,desc:'你相信华丽进攻与巨星灵感能改变比赛。目前有 28% 的玩家与你站在同一阵线。'},
+  {id:'england',  name:'英格兰', emoji:'🏴󠁧󠁢󠁥󠁮󠁧󠁿',caption:'大本钟',
+   img:'https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Clock_Tower_-_Palace_of_Westminster%2C_London_-_May_2007.jpg/250px-Clock_Tower_-_Palace_of_Westminster%2C_London_-_May_2007.jpg',
+   label:'新世代黄金阵容',  fanType:'理性战术派',pct:20,lucky:78,desc:'你相信系统战术与年轻阵容的爆发力。目前有 20% 的玩家与你站在同一阵线。'},
+  {id:'argentina',name:'阿根廷', emoji:'🇦🇷',caption:'布宜诺斯艾利斯方尖碑',
+   img:'https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Obelisco_en_Buenos_Aires.JPG/250px-Obelisco_en_Buenos_Aires.JPG',
+   label:'冠军血统延续',    fanType:'冠军传承派',pct:15,lucky:85,desc:'你相信冠军基因会延续，传奇仍在书写。目前有 15% 的玩家与你站在同一阵线。'},
+  {id:'spain',    name:'西班牙', emoji:'🇪🇸',caption:'圣家堂',
+   img:'https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Sagrada_Familia_8-12-21_(1).jpg/250px-Sagrada_Familia_8-12-21_(1).jpg',
+   label:'控球艺术代表',    fanType:'控球艺术派',pct:8, lucky:72,desc:'你相信精准传控能让对手望尘莫及。目前有 8% 的玩家与你站在同一阵线。'},
+  {id:'germany',  name:'德国',   emoji:'🇩🇪',caption:'勃兰登堡门',
+   img:'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Brandenburg_Gate_-_Brandenburger_Tor_-_Berlin_-_Germany_-_02.jpg/250px-Brandenburg_Gate_-_Brandenburger_Tor_-_Berlin_-_Germany_-_02.jpg',
+   label:'钢铁纪律回归',    fanType:'纪律铁血派',pct:3, lucky:65,desc:'你相信严格组织与纪律是夺冠的根本。目前有 3% 的玩家与你站在同一阵线。'},
+  {id:'portugal', name:'葡萄牙', emoji:'🇵🇹',caption:'贝伦塔',
+   img:'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Belem_Tower_-_April_2019_%282%29.jpg/250px-Belem_Tower_-_April_2019_%282%29.jpg',
+   label:'巨星与新星并肩',  fanType:'巨星追随派',pct:1, lucky:68,desc:'你相信个人英雄主义与团队配合的完美结合。目前有 1% 的玩家与你站在同一阵线。'},
+  {id:'other',    name:'其他队伍',emoji:'⚽',caption:'马拉卡纳球场',
+   img:'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Maracana_stadium%2C_brazil_-_panoramio.jpg/250px-Maracana_stadium%2C_brazil_-_panoramio.jpg',
+   label:'黑马奇迹可能',    fanType:'黑马奇迹派',pct:1, lucky:80,desc:'你相信足球的神奇与不可预测性，黑马能创造历史。目前有 1% 的玩家与你站在同一阵线。'},
+];
+
+const FAQS=[
+  {q:'完成冠军预测投票后，就能参加抽奖吗？',a:'不能。冠军预测投票仅为互动娱乐，不等同于抽奖资格。欲参加豪华大奖抽奖，需前往 12B 品牌官网加入或登录会员，并完成指定活动要求。'},
+  {q:'一定要加入 12B 品牌会员吗？',a:'是。抽奖资格需以品牌官网会员资料与活动完成记录作为依据，因此用户需加入或登录 12B 品牌会员，并完成指定任务。'},
+  {q:'在哪里完成指定活动要求？',a:'请前往 12B 品牌官网活动页，依照页面公告完成指定要求。所有活动资格与抽奖规则以品牌官网公告为准。'},
+  {q:'人气排行榜会影响中奖概率吗？',a:'不会。人气排行榜仅供互动娱乐参考，不影响抽奖结果或中奖概率。'},
+  {q:'奖品有哪些？',a:'奖品包含第1名纽约决赛双人豪华行、第2–3名纽约决赛单人行程、第4名豪华亚洲邮轮之旅、第5名iPhone 17 Pro Max、第6–10名MYR 400免费彩金、第11–30名MYR 160免费彩金。实际奖品内容、数量与兑换方式以12B品牌官网公告为准。'},
+  {q:'奖品内容以哪里公告为准？',a:'奖品内容、活动期间、抽奖方式、得奖公告与资格认定，皆以 12B 品牌官网公告为准。'},
+];
+
+let selectedTeam=null;
+
+function buildCards(){
+  document.getElementById('team-grid').innerHTML=TEAMS.map(t=>`
+    <div class="team-card p-4 text-center" id="card-${t.id}" onclick="selectTeam('${t.id}')">
+      <div style="position:relative;width:88px;height:80px;margin:0 auto 10px;border-radius:10px;overflow:hidden;border:1px solid rgba(212,175,55,.25);background:linear-gradient(160deg,#0d1829 0%,#111d35 100%)">
+        <img src="${t.img}" alt="${t.caption}"
+             style="width:100%;height:100%;object-fit:contain;display:block;padding:4px"
+             onerror="this.style.display='none';this.nextSibling.style.display='flex'">
+        <div style="display:none;align-items:center;justify-content:center;width:100%;height:100%;font-size:2.4rem;background:#1a2035">${t.emoji}</div>
+        <div style="position:absolute;bottom:3px;right:4px;font-size:.9rem;line-height:1;text-shadow:0 1px 4px rgba(0,0,0,.9)">${t.emoji}</div>
+      </div>
+      <p style="font-size:.6rem;color:rgba(212,175,55,.6);margin-bottom:4px">${t.caption}</p>
+      <h3 class="font-black text-base text-white mb-1">${t.name}</h3>
+      <p class="text-xs mb-4" style="color:rgba(156,163,175,.75)">${t.label}</p>
+      <button class="w-full py-2 text-sm font-bold rounded-lg transition" style="border:1px solid rgba(212,175,55,.4);color:#D4AF37" onmouseover="this.style.background='rgba(212,175,55,.15)'" onmouseout="this.style.background=''">我支持这队</button>
+    </div>
+  `).join('');
+}
+
+function selectTeam(id){
+  selectedTeam=TEAMS.find(t=>t.id===id);
+  if(!selectedTeam)return;
+  TEAMS.forEach(t=>{
+    const c=document.getElementById('card-'+t.id);
+    c.classList.toggle('selected',t.id===id);
+    c.classList.toggle('dimmed',t.id!==id);
+    const old=c.querySelector('.selected-badge');
+    if(old)old.remove();
+    if(t.id===id){
+      const b=document.createElement('div');
+      b.className='selected-badge';b.textContent='✓ 你已选择';c.appendChild(b);
+    }
+  });
+  document.getElementById('chosen-name').textContent=selectedTeam.emoji+' '+selectedTeam.name;
+  document.getElementById('chosen-pct').textContent=selectedTeam.pct;
+  ['vote-complete-section','leaderboard-section','result-card-wrapper'].forEach(id=>document.getElementById(id).classList.remove('hidden'));
+  buildLeaderboard();
+  buildResultCard();
+  setTimeout(()=>smoothScroll('vote-complete-section'),300);
+}
+
+function buildLeaderboard(){
+  const sorted=[...TEAMS].sort((a,b)=>b.pct-a.pct);
+  document.getElementById('leaderboard-list').innerHTML=sorted.map((t,i)=>`
+    <div class="rounded-xl p-4" style="background:rgba(26,32,53,.5);border:1px solid ${t.id===selectedTeam.id?'rgba(212,175,55,.5)':'rgba(30,45,74,.5)'}">
+      <div class="flex items-center gap-3 mb-3">
+        <span class="font-black w-6 text-center" style="color:rgba(156,163,175,.5)">${i+1}</span>
+        <span class="text-xl">${t.emoji}</span>
+        <span class="font-bold text-white flex-1">${t.name}</span>
+        ${t.id===selectedTeam.id?'<span class="badge-gold">你的选择</span>':''}
+        <span class="font-black ${t.id===selectedTeam.id?'text-gold':'text-gray-300'}">${t.pct}%</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill ${t.id===selectedTeam.id?'my-pick':''}" data-w="${t.pct}" style="width:0%"></div>
+      </div>
+    </div>
+  `).join('');
+  setTimeout(()=>document.querySelectorAll('.progress-fill').forEach(b=>b.style.width=b.dataset.w+'%'),100);
+}
+
+function buildResultCard(){
+  const t=selectedTeam;
+  document.getElementById('rc-emoji').textContent=t.emoji;
+  document.getElementById('rc-name').textContent=t.name;
+  document.getElementById('rc-fantype').textContent=t.fanType;
+  document.getElementById('rc-desc').textContent=t.desc;
+  document.getElementById('rc-lucky').textContent=t.lucky+'%';
+}
+
+function resetVote(){
+  selectedTeam=null;
+  TEAMS.forEach(t=>{
+    const c=document.getElementById('card-'+t.id);
+    c.classList.remove('selected','dimmed');
+    const b=c.querySelector('.selected-badge');if(b)b.remove();
+  });
+  ['vote-complete-section','leaderboard-section','result-card-wrapper'].forEach(id=>document.getElementById(id).classList.add('hidden'));
+}
+
+function buildFAQ(){
+  document.getElementById('faq-list').innerHTML=FAQS.map((f,i)=>`
+    <div class="faq-item" id="fi-${i}">
+      <button class="w-full flex items-center justify-between p-4 text-left" onclick="toggleFAQ(${i})">
+        <span class="font-bold text-white text-sm pr-4">${f.q}</span>
+        <span class="faq-icon text-gold text-2xl flex-shrink-0">+</span>
+      </button>
+      <div class="faq-answer" id="fa-${i}">
+        <p class="text-sm px-4 pb-4 leading-relaxed" style="color:rgba(156,163,175,.8)">${f.a}</p>
+      </div>
+    </div>
+  `).join('');
+}
+
+function toggleFAQ(i){
+  const isOpen=document.getElementById('fi-'+i).classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(el=>el.classList.remove('open'));
+  document.querySelectorAll('.faq-answer').forEach(el=>el.classList.remove('open'));
+  if(!isOpen){document.getElementById('fi-'+i).classList.add('open');document.getElementById('fa-'+i).classList.add('open')}
+}
+
+function smoothScroll(id){
+  const el=document.getElementById(id);
+  if(el){window.scrollTo({top:el.getBoundingClientRect().top+window.scrollY-80,behavior:'smooth'})}
+}
+
+function animateCount(el,target,dur=2000){
+  let v=0;const step=target/(dur/16);
+  const t=setInterval(()=>{v+=step;if(v>=target){el.textContent=target.toLocaleString();clearInterval(t)}else el.textContent=Math.floor(v).toLocaleString()},16);
+}
+
+function initParticles(){
+  const canvas=document.getElementById('particles-canvas');
+  const ctx=canvas.getContext('2d');
+  const hero=document.getElementById('hero');
+  function resize(){canvas.width=hero.offsetWidth;canvas.height=hero.offsetHeight}
+  resize();window.addEventListener('resize',resize);
+  const pts=Array.from({length:70},()=>newP());
+  function newP(){return{x:Math.random()*(canvas.width||800),y:Math.random()*(canvas.height||600),r:Math.random()*2+.5,vx:(Math.random()-.5)*.3,vy:-Math.random()*.6-.1,op:Math.random()*.4+.15,life:1,decay:Math.random()*.002+.001}}
+  function loop(){
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    pts.forEach((p,i)=>{
+      p.x+=p.vx;p.y+=p.vy;p.life-=p.decay;
+      if(p.life<=0||p.y<-5){pts[i]=newP();pts[i].y=canvas.height+5;return}
+      ctx.save();ctx.globalAlpha=p.life*p.op;ctx.fillStyle='#D4AF37';ctx.shadowBlur=4;ctx.shadowColor='#F0C96B';ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fill();ctx.restore();
+    });
+    requestAnimationFrame(loop);
+  }
+  loop();
+}
+
+function initReveal(){
+  const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.1});
+  document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+}
+
+document.addEventListener('DOMContentLoaded',()=>{
+  buildCards();buildFAQ();initParticles();initReveal();
+  const statEl=document.getElementById('stat-fans');
+  new IntersectionObserver(entries=>{if(entries[0].isIntersecting){animateCount(statEl,18427)}},{threshold:.5}).observe(statEl);
+});
+</script>
+</body>
+</html>
