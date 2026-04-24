@@ -189,7 +189,7 @@ header{position:fixed;top:36px;left:0;right:0;z-index:200;background:rgba(10,14,
       <p class="text-gray-400 max-w-xl mx-auto text-sm sm:text-base">这是一场球迷预测挑战。完成投票后，你可以查看人气排行与专属预测结果。</p>
     </div>
 
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8" id="team-grid"></div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 mb-8" id="team-grid"></div>
 
     <p class="text-center text-xs reveal" style="color:rgba(156,163,175,.4)">
       投票完成后，前往 12B 官网注册会员即可正式参与豪华大奖抽奖
@@ -542,18 +542,18 @@ let selectedTeam=null;
 
 function buildCards(){
   document.getElementById('team-grid').innerHTML=TEAMS.map(t=>`
-    <div class="team-card p-4 text-center" id="card-${t.id}" onclick="selectTeam('${t.id}')">
-      <div style="position:relative;width:88px;height:80px;margin:0 auto 10px;border-radius:10px;overflow:hidden;border:1px solid rgba(212,175,55,.25);background:linear-gradient(160deg,#0d1829 0%,#111d35 100%)">
+    <div class="team-card p-3 sm:p-4 text-center" id="card-${t.id}" onclick="selectTeam('${t.id}')">
+      <div style="position:relative;width:100%;aspect-ratio:1/1;margin:0 auto 10px;border-radius:10px;overflow:hidden;border:1px solid rgba(212,175,55,.25);background:linear-gradient(160deg,#0d1829 0%,#111d35 100%)">
         <img src="${t.img}" alt="${t.caption}"
-             style="width:100%;height:100%;object-fit:contain;display:block;padding:4px"
+             style="width:100%;height:100%;object-fit:contain;display:block;padding:8px"
              onerror="this.style.display='none';this.nextSibling.style.display='flex'">
-        <div style="display:none;align-items:center;justify-content:center;width:100%;height:100%;font-size:2.4rem;background:#1a2035">${t.emoji}</div>
-        <div style="position:absolute;bottom:3px;right:4px;font-size:.9rem;line-height:1;text-shadow:0 1px 4px rgba(0,0,0,.9)">${t.emoji}</div>
+        <div style="display:none;align-items:center;justify-content:center;width:100%;height:100%;font-size:3rem;background:#1a2035">${t.emoji}</div>
+        <div style="position:absolute;bottom:4px;right:5px;font-size:1.1rem;line-height:1;text-shadow:0 1px 4px rgba(0,0,0,.9)">${t.emoji}</div>
       </div>
-      <p style="font-size:.6rem;color:rgba(212,175,55,.6);margin-bottom:4px">${t.caption}</p>
-      <h3 class="font-black text-base text-white mb-1">${t.name}</h3>
-      <p class="text-xs mb-4" style="color:rgba(156,163,175,.75)">${t.label}</p>
-      <button class="w-full py-2 text-sm font-bold rounded-lg transition" style="border:1px solid rgba(212,175,55,.4);color:#D4AF37" onmouseover="this.style.background='rgba(212,175,55,.15)'" onmouseout="this.style.background=''">我支持这队</button>
+      <p style="font-size:.65rem;color:rgba(212,175,55,.6);margin-bottom:4px">${t.caption}</p>
+      <h3 class="font-black text-lg sm:text-xl text-white mb-1">${t.name}</h3>
+      <p class="text-xs sm:text-sm mb-4" style="color:rgba(156,163,175,.75)">${t.label}</p>
+      <button class="w-full py-3 text-sm font-bold rounded-lg transition" style="border:1px solid rgba(212,175,55,.4);color:#D4AF37" onmouseover="this.style.background='rgba(212,175,55,.15)'" onmouseout="this.style.background=''">我支持这队</button>
     </div>
   `).join('');
 }
